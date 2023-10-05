@@ -1,12 +1,11 @@
 import Navbar from "../components/Navbar";
-import Accordions from "../components/Accordions";
+import SectionAccordions from "../components/SectionAccordions";
 
 export default function AdminPage() {
   return (
     <div>
       <Navbar />
-      <Accordions />
+      <SectionAccordions />
     </div>
-  )
+  );
 }
-
