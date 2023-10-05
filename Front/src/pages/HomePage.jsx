@@ -1,4 +1,10 @@
+import Accueil from "../components/Accueil";
+import Navbar from "../components/Navbar";
+
 const HomePage = () => {
-  return <></>;
+  return <div>
+    <Navbar />
+    <Accueil/>
+  </div>;
 };
 export default HomePage;
