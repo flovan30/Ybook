@@ -1,10 +1,12 @@
-function AdminPage() {
+import Navbar from "../components/Navbar";
+import Accordions from "../components/Accordions";
+
+export default function AdminPage() {
   return (
     <div>
-      {" "}
-      test
-      <sectionModif />
+      <Navbar />
+      <Accordions />
     </div>
-  );
+  )
 }
-export default AdminPage;
+
