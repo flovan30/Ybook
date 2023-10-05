@@ -1,7 +1,7 @@
 function Accueil() {
     return (
         <div className="flex justify-around">
-            <div id="1" className="w-80 h-fit flex flex-wrap border border-red">
+            <div id="1" className="w-80 h-fit flex flex-wrap border border-red bg-blue">
                 <div className=" w-24 h-24 p-2 border border-black m-1 flex justify-center">
                     <label for="casque"></label>
                     <select className="appearance-none bg-transparent" id="casque" name="casque">
