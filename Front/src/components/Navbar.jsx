@@ -3,21 +3,21 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-
     <div>
       <ol className="bg-gris flex items-center justify-between">
         <li>
-          <Link to="HomePage" className="font-bold text-2xl">YBook</Link>
+          <Link to="HomePage" className="font-bold text-2xl">
+            YBook
+          </Link>
         </li>
         <li>
           <Link to="EditionPage">Mes stuffs</Link>
-
         </li>
         <li>
           <Link to="ListPage">List</Link>
         </li>
         <li>
-          <Link to="ConnexionPage">Tous les équipements</Link>
+          <Link to="encyclopedie">Tous les équipements</Link>
         </li>
         <li>
           <Link to="InscriptionPage">inscription</Link>
