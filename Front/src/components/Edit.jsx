@@ -23,7 +23,7 @@ function Edit() {
             </div>
             <div id="4" className="mt-2 bg-gris w-80 h-fit justify-around flex flex-wrap border border-noir">
                 <div className="w-72 h-24 p-2 border border-noir m-1 flex justify-center left-0">
-                    <input className="bg-gris flex text-center flex-col justify-center items-center outline-none" placeholder="Nom du stuff" type="text" id="nomStuff" name="nom" autoComplete="off" required></input>
+                    <input className="bg-gris flex text-center flex-col justify-center items-center outline-none" placeholder="Nom du stuff" type="text" id="nomStuff" name="nom" autoComplete="off" maxLength="24" required></input>
                 </div>
                 <div className="bg-[url('/casque.png')] bg-contain w-24 h-24 p-2 border border-noir m-1 flex justify-center">
                     <label for="casque"></label>
@@ -75,6 +75,9 @@ function Edit() {
                         <option className="bg-noir" value="bottes2">Bottes 2</option>
                         <option className="bg-noir" value="bottes3">Bottes 3</option>
                     </select>
+                </div>
+                <div className="w-24 h-24 p-2 border border-noir m-1 flex justify-center">
+                    <input className="bg-transparent flex text-center flex-col justify-center items-center outline-none" placeholder="LVL (1-100)" type="level" id="niveau" name="niveau" autoComplete="off" maxLength="3" min="1" max="100" style={{ lineHeight: '2em' }} required></input>
                 </div>
                 <div className="bg-[url('/arme.png')] bg-contain w-24 h-24 p-2 border border-noir m-1 flex justify-center left-0 bg-armes.png">
                     <label for="arme"></label>
