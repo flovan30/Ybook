@@ -12,9 +12,11 @@ app.use(cors());
 
 // ##### ROUTES #####
 const itemRoutes = require('./routes/itemRoutes');
+const classeRoutes = require('./routes/classeRoutes');
 
 // ##### UTILISATION DES ROUTES #####
 app.use('/api', itemRoutes);
+app.use('/api', classeRoutes);
 
 
 connectDB()

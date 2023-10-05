@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
+
     <div>
       <ol className="bg-gris flex items-center justify-between">
         <li>
@@ -10,12 +11,14 @@ function Navbar() {
         </li>
         <li>
           <Link to="EditionPage">Mes stuffs</Link>
+
         </li>
         <li>
           <Link to="ListPage">List</Link>
         </li>
         <li>
           <Link to="ConnexionPage">Tous les équipements</Link>
+
         </li>
         <li>
           <Link to="InscriptionPage">inscription</Link>
@@ -29,4 +32,6 @@ function Navbar() {
     </div>
   );
 }
+
 export default Navbar;
+
