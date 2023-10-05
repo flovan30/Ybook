@@ -1,8 +1,6 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 
-import { ChevronDoubleDownIcon } from "@heroicons/react/24/outline";
-
 const ListItem = props => {
   const [isLoading, setIsLoading] = useState(true);
   const [items, setItems] = useState(null);
