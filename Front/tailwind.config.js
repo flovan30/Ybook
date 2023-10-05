@@ -8,6 +8,7 @@ export default {
     extend: {
       colors:{
         'gris':'#EAEAEA',
+        'noir': '#0A122A'
       }
     },
   },
