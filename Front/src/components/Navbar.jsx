@@ -9,7 +9,7 @@ function Navbar() {
         <li>
           <Link to="/">
             <img
-              src="../../public/ybook_logo.png"
+              src="/Ybook_Logo.png"
               alt="logo"
               className="w-20 h-auto m-2 transition duration-300 ease-in-out hover:scale-110"
             ></img>
