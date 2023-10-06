@@ -19,3 +19,9 @@ exports.getItemsByLevel = async (req, res) => {
     const items = await Item.find({ level: req.params['level'] })
     res.status(200).json({ items })
 };
+
+// name by _id
+exports.getItemsById = async (req, res) => {
+    const item = await Item.find({ _id: req.params['id'] })
+    res.status(200).json({ item })
+}
