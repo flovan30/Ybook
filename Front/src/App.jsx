@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import { Auth0Provider } from "@auth0/auth0-react";
 
 import HomePage from "./pages/HomePage";
+import EditPage from "./pages/EditPage";
 import AdminPage from "./pages/AdminPage";
 import ProfilePage from "./pages/ProfilePage";
 import EncyclopediaPage from "./pages/EncyclopediaPage";
@@ -19,6 +20,7 @@ function App() {
       >
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/new-set" element={<EditPage />} />
 
           <Route path="/adminPage" element={<AdminPage />} />
           <Route path="/profile" element={<ProfilePage />} />
