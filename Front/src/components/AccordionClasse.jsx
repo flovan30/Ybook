@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import ListClasse from "./ListClasse";
 
-
 const AccordionClasse = (props) => {
   const [isLoading, setIsLoading] = useState(true);
   const [classes, setClasse] = useState(null);
@@ -13,7 +12,6 @@ const AccordionClasse = (props) => {
         Accept: "Application/json",
       },
     })  
-
       .then((res) => res.json())
       .then((res) => {
         console.log(res.classe);
