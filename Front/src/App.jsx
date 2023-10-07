@@ -2,8 +2,9 @@ import { Routes, Route } from "react-router-dom";
 import { Auth0Provider } from "@auth0/auth0-react";
 
 import HomePage from "./pages/HomePage";
+import EditPage from "./pages/EditPage";
 import AdminPage from "./pages/AdminPage";
-import ProfilePage from "./pages/ProfilePage";
+import DetailSetPage from "./pages/DetailSetPage";
 import EncyclopediaPage from "./pages/EncyclopediaPage";
 import ErrorPage from "./pages/ErrorPage";
 
@@ -19,10 +20,11 @@ function App() {
       >
         <Routes>
           <Route path="/" element={<HomePage />} />
-
+          <Route path="/new-set" element={<EditPage />} />
           <Route path="/adminPage" element={<AdminPage />} />
-          <Route path="/profile" element={<ProfilePage />} />
           <Route path="/encyclopedie" element={<EncyclopediaPage />} />
+
+          <Route path="/set/:id" element={<DetailSetPage />} />
 
           {/* page d'érreur */}
           <Route path="*" element={<ErrorPage />} />

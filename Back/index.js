@@ -13,10 +13,14 @@ app.use(cors());
 // ##### ROUTES #####
 const itemRoutes = require('./routes/itemRoutes');
 const classeRoutes = require('./routes/classeRoutes');
+const raceRoutes = require('./routes/raceRoutes');
+const setRoutes = require('./routes/setRoutes');
 
 // ##### UTILISATION DES ROUTES #####
 app.use('/api', itemRoutes);
 app.use('/api', classeRoutes);
+app.use('/api', raceRoutes)
+app.use('/api', setRoutes);
 
 
 connectDB()

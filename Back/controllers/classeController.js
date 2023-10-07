@@ -12,3 +12,8 @@ exports.getClasseByName = async (req, res) => {
     const classe = await Classe.find({ name: req.params['name'] })
     res.status(200).json({ classe })
 };
+
+exports.getClasseById = async (req, res) => {
+    const classe = await Classe.find({ _id: req.params['id'] })
+    res.status(200).json({ classe })
+};
