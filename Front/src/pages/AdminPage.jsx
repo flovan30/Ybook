@@ -1,11 +1,12 @@
 import Navbar from "../components/Navbar";
-import SectionAccordions from "../components/SectionAccordions";
-
+import ListClasse from "../components/ListClasse";
 export default function AdminPage() {
   return (
     <div>
-      <Navbar />
-      <SectionAccordions />
+      <>
+        <Navbar />
+        <ListClasse />
+      </>
     </div>
   );
 }
